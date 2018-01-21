@@ -14,3 +14,6 @@
 
   //Define SITENAME
   define('SITENAME', 'The SharePosts');
+
+  //App Version
+  define('APPVERSION', '1.0.0');
