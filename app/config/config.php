@@ -1,6 +1,6 @@
 <?php
   //DB params
-  define('DB_HOST', 'localhost');
+  define('DB_HOST', '172.30.205.15');
   define('DB_USER', 'root');
   define('DB_PASS', '123456');
   define('DB_NAME', 'shareposts');
@@ -10,7 +10,7 @@
   define('APPROOT', dirname(dirname(__FILE__)));
   
   //Define URLROOT
-  define('URLROOT', 'http://localhost/shareposts');
+  define('URLROOT', 'http://sp.chwen.im');
 
   //Define SITENAME
   define('SITENAME', 'The SharePosts');
