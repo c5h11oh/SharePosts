@@ -22,6 +22,13 @@
          return $results;
       }
 
+      public function getPostById($id){
+         $this->db->query('SELECT * FROM posts WHERE id = :id ');
+         $this->db->bind(':id', $id);
+         $result = $this->db->single();
+         return $result;
+      }
+
       public function addPost($data){
          $this->db->query('INSERT INTO posts (title, user_id, body) VALUES (:title, :user_id, :body)');
          //Bind values
