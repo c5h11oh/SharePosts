@@ -3,7 +3,16 @@
         public function __construct(){
             $this->userModel = $this->model('User');
         }
-
+        
+        public function index(){
+            $data = [
+                'email' => '',
+                'password' => '',
+                'email_err' => '',
+                'password_err' => '',
+            ];
+            $this->view('users/login', $data);
+        }
         public function register(){
             //Check for posts
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
